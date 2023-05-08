@@ -19,6 +19,6 @@ variable "vault_static_account" {
 }
 
 variable "service_account_to_impersonate_email" {
-    type = string
-    description = "Email of the SA to be impersonated"
+  type        = string
+  description = "Email of the SA to be impersonated"
 }
