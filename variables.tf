@@ -10,15 +10,19 @@ variable "vault_token" {
 
 variable "vault_secret_engine" {
   type        = string
-  description = "Vault Auth Token"
+  description = "Vault Secret Engine"
 }
 
-variable "vault_static_account" {
+variable "impersonator_static_account" {
   type        = string
-  description = "Vault Auth Token"
+  description = "Vault Impersonator Static Account"
 }
 
-variable "service_account_to_impersonate_email" {
+variable "executor_service_account" {
   type        = string
   description = "Email of the SA to be impersonated"
+}
+
+variable "project_id" {
+  type = string
 }
